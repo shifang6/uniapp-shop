@@ -84,11 +84,11 @@ export default {
         // 打开栏目的页面
         handleCateLogChannel({ name }) {
             console.log(name);
-            if (name == '分类') wx.switchTab({ url: '/pages/cate/cate' });
+            if (name == '分类') uni.switchTab({ url: '/pages/cate/cate' });
         },
         // 打开产品列表页面数据
         handleGoodsList({ routerUrl: url }) {
-            wx.navigateTo({
+            uni.navigateTo({
                 url
             });
         }
