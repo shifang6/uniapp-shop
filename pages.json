@@ -27,6 +27,23 @@
         }
 
     }],
+    "subPackages": [
+        {
+            "root": "subpkg",
+            "pages": [
+                
+            {
+                    "path" : "goods_details/goods_details",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+        }
+    ],
     "tabBar": {
         "selectedColor": "#C00000",
         "list": [{

@@ -41,7 +41,7 @@ service.interceptors.request.use(
 service.interceptors.response.use(res => {
     // console.log('响应拦截器res---------------', res)
     //res.data.status== 200
-    if (res.status ==200) {
+    if (res.status == 200) {
         return res.data
     } else {
         return Promise.reject(res.errMsg);
@@ -56,6 +56,11 @@ service.interceptors.response.use(res => {
                 break;
         }
     }
+    uni.showToast({
+        title: '数据请求失败！',
+        duration: 1500,
+        icon: 'none',
+    })
     return Promise.reject(error)
 })
 
