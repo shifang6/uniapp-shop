@@ -27,23 +27,23 @@
         }
 
     }],
-    "subPackages": [
-        {
-            "root": "subpkg",
-            "pages": [
-                
-            {
-                    "path" : "goods_details/goods_details",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
-        }
-    ],
+    "subPackages": [{
+        "root": "subpkg",
+        "pages": [{
+            "path": "goods_details/goods_details",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        }, {
+            "path": "goods_lists/goods_lists",
+            "style": {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        }]
+    }],
     "tabBar": {
         "selectedColor": "#C00000",
         "list": [{
