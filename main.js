@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 
+// 环境变量引入
+import '@/.env.js'
+
 Vue.config.productionTip = false
 
 App.mpType = 'app'

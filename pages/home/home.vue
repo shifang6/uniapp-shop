@@ -1,19 +1,19 @@
 <template>
-    <view>
-        home
-    </view>
+    <view>home</view>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                
-            };
-        }
+import { GetSwiperApi } from '@/api/home.js';
+export default {
+    data() {
+        return {};
+    },
+    onLoad() {
+        GetSwiperApi().then(res=>{
+            console.log(res)
+        })
     }
+};
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

@@ -1,0 +1,37 @@
+{
+    "name": "uniapp-shop-1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shifang6/uniapp-shop.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/shifang6/uniapp-shop/issues"
+    },
+    "homepage": "https://github.com/shifang6/uniapp-shop#readme",
+    "dependencies": {
+        "axios": "^0.26.1"
+    },
+
+    "uni-app": {
+        "scripts": {
+            "mp-test": {
+                "title": "测试环境",
+                "env": {
+                    "UNI_PLATFORM": "h5"
+                },
+                "define": {
+                    "MP-TEST": true
+                }
+            }
+        }
+    }
+}

@@ -5,7 +5,6 @@
             "navigationBarTitleText": "",
             "enablePullDownRefresh": false
         }
-
     }, {
         "path": "pages/cate/cate",
         "style": {
