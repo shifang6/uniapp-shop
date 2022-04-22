@@ -5,6 +5,7 @@
 			console.log('App Launch')
 		},
 		onShow: function() {
+			console.log(process.uniEnv.baseUrl)
 			console.log('App Show')
 		},
 		onHide: function() {

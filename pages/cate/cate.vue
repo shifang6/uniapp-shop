@@ -1,26 +1,29 @@
 <template>
-    <view class="scroll-view-context">
-        <scroll-view class="scroll-view-context-left" scroll-y="true" :style="{ height: wh + 'px' }">
-            <view
-                :class="['scroll-view-context-left-item', item.cat_id == activeNum ? 'active' : '']"
-                v-for="(item, index) in cateList"
-                :key="item.cat_id"
-                @click="handleChangeCateLogOne(item, index)"
-            >
-                {{ item.cat_name }}
-            </view>
-        </scroll-view>
-        <scroll-view class="scroll-view-context-right" scroll-y="true" :style="{ height: wh + 'px' }" :scroll-top="scrollTopPx">
-            <block v-for="(item2, index2) in secondCateTree" :key="item2.cat_id">
-                <view class="scroll-view-context-right-title">/  {{ item2.cat_name }}  /</view>
-                <view class="scroll-view-context-right-context">
-                    <view class="scroll-view-context-right-context-box" v-for="(item3, index3) in item2.children" :key="index3" @click="handleGoodsListOpen(item3)">
-                        <image :src="item3.cat_icon"></image>
-                        <text>{{ item3.cat_name }}</text>
-                    </view>
+    <view>
+        <view class="search-top"><my-search @click="handleSeachAction"></my-search></view>
+        <view class="scroll-view-context">
+            <scroll-view class="scroll-view-context-left" scroll-y="true" :style="{ height: wh + 'px' }">
+                <view
+                    :class="['scroll-view-context-left-item', item.cat_id == activeNum ? 'active' : '']"
+                    v-for="(item, index) in cateList"
+                    :key="item.cat_id"
+                    @click="handleChangeCateLogOne(item, index)"
+                >
+                    {{ item.cat_name }}
                 </view>
-            </block>
-        </scroll-view>
+            </scroll-view>
+            <scroll-view class="scroll-view-context-right" scroll-y="true" :style="{ height: wh + 'px' }" :scroll-top="scrollTopPx">
+                <block v-for="(item2, index2) in secondCateTree" :key="item2.cat_id">
+                    <view class="scroll-view-context-right-title">/ {{ item2.cat_name }} /</view>
+                    <view class="scroll-view-context-right-context">
+                        <view class="scroll-view-context-right-context-box" v-for="(item3, index3) in item2.children" :key="index3" @click="handleGoodsListOpen(item3)">
+                            <image :src="item3.cat_icon"></image>
+                            <text>{{ item3.cat_name }}</text>
+                        </view>
+                    </view>
+                </block>
+            </scroll-view>
+        </view>
     </view>
 </template>
 
@@ -48,11 +51,15 @@ export default {
         this.GetCateLogDate();
     },
     methods: {
+        // 点击搜索框的操作
+        handleSeachAction(actString) {
+            console.info(actString);
+        },
         GetScrollWindowsHeight() {
             // 获取当前系统的信息
             const sysInfo = uni.getSystemInfoSync();
             // 为 wh 窗口可用高度动态赋值
-            this.wh = sysInfo.windowHeight;
+            this.wh = sysInfo.windowHeight - 50;
         },
         GetCateLogDate() {
             GetCategoriesDateApi().then(res => {
@@ -69,7 +76,7 @@ export default {
             this.scrollTopPx = this.scrollTopPx == 0 ? 1 : 0;
         },
         // 点击查看商品列表
-        handleGoodsListOpen({cat_id}) {
+        handleGoodsListOpen({ cat_id }) {
             uni.navigateTo({
                 url: `/subpkg/goods_lists/goods_lists?cat_id=${cat_id}`
             });
@@ -141,5 +148,10 @@ export default {
             }
         }
     }
+}
+.search-top {
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 </style>

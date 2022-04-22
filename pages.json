@@ -42,7 +42,16 @@
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
-        }]
+        }    ,{
+                    "path" : "search/search",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
     }],
     "tabBar": {
         "selectedColor": "#C00000",

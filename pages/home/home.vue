@@ -1,5 +1,6 @@
 <template>
     <view>
+        <view class="search-top"><my-search></my-search></view>
         <!-- 轮播图部分 -->
         <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
             <swiper-item v-for="item in swipersDate" :key="item.id">
@@ -131,5 +132,10 @@ swiper {
             }
         }
     }
+}
+.search-top {
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 </style>

@@ -160,7 +160,7 @@
 	};
 </script>
 
-<style lang="scss" >
+<style lang="scss" scoped>
 	$uni-primary: #2979ff !default;
 	$uni-success: #4cd964 !default;
 	$uni-warning: #f0ad4e !default;

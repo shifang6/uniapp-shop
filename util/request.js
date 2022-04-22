@@ -33,17 +33,27 @@ service.interceptors.request.use(
     },
     error => {
         // console.log('请求拦截器错误-------------', error); // for debug
+        uni.showToast({
+            title: error,
+            duration: 1500,
+            icon: 'none',
+        })
         return Promise.reject(error);
     }
 );
 
 //配置成功后的拦截器
 service.interceptors.response.use(res => {
-    // console.log('响应拦截器res---------------', res)
+    console.log('响应拦截器res---------------', res)
     //res.data.status== 200
-    if (res.status == 200) {
+    if (res.data.meta.status == 200) {
         return res.data
     } else {
+        uni.showToast({
+            title: res.errMsg,
+            duration: 1500,
+            icon: 'none',
+        })
         return Promise.reject(res.errMsg);
     }
 }, error => {
@@ -57,7 +67,7 @@ service.interceptors.response.use(res => {
         }
     }
     uni.showToast({
-        title: '数据请求失败！',
+        title: error,
         duration: 1500,
         icon: 'none',
     })

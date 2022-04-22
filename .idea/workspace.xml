@@ -2,7 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22855eb0-7478-4573-b7ab-050d44d52a44" name="默认变更列表" comment="">
+      <change afterPath="$PROJECT_DIR$/components/my-search/my-search.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uniapp-shop-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uniapp-shop-1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/uni-section/uni-section.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/cate/cate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cate/cate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-badge/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-badge/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-badge/components/uni-badge/uni-badge.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-badge/components/uni-badge/uni-badge.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-badge/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-badge/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-combox/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-combox/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-combox/components/uni-combox/uni-combox.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-combox/components/uni-combox/uni-combox.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-combox/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-combox/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-combox/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-combox/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-data-picker/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-data-picker/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-data-picker/components/uni-data-picker/keypress.js" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-data-picker/components/uni-data-picker/keypress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-data-picker/components/uni-data-picker/uni-data-picker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-data-picker/components/uni-data-picker/uni-data-picker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-data-picker/components/uni-data-pickerview/uni-data-picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-data-picker/components/uni-data-pickerview/uni-data-picker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-data-picker/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-data-picker/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-data-picker/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-data-picker/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-dateformat/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-dateformat/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-dateformat/components/uni-dateformat/date-format.js" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-dateformat/components/uni-dateformat/date-format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-dateformat/components/uni-dateformat/uni-dateformat.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-dateformat/components/uni-dateformat/uni-dateformat.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-dateformat/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-dateformat/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-dateformat/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-dateformat/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-drawer/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-drawer/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-drawer/components/uni-drawer/keypress.js" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-drawer/components/uni-drawer/keypress.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-drawer/components/uni-drawer/uni-drawer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-drawer/components/uni-drawer/uni-drawer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-drawer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-drawer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-fav/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-fav/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-fav/components/uni-fav/uni-fav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-fav/components/uni-fav/uni-fav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-fav/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-fav/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-file-picker/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-file-picker/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-file-picker/components/uni-file-picker/uni-file-picker.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-file-picker/components/uni-file-picker/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-file-picker/components/uni-file-picker/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-file-picker/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-file-picker/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-file-picker/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-file-picker/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-goods-nav/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-goods-nav/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-goods-nav/components/uni-goods-nav/uni-goods-nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-goods-nav/components/uni-goods-nav/uni-goods-nav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-goods-nav/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-goods-nav/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-grid/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-grid/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-grid/components/uni-grid-item/uni-grid-item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-grid/components/uni-grid-item/uni-grid-item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-grid/components/uni-grid/uni-grid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-grid/components/uni-grid/uni-grid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-grid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-grid/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-group/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-group/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-group/components/uni-group/uni-group.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-group/components/uni-group/uni-group.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-group/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-group/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-group/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-group/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-indexed-list/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-indexed-list/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-indexed-list/components/uni-indexed-list/uni-indexed-list-item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-indexed-list/components/uni-indexed-list/uni-indexed-list-item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-indexed-list/components/uni-indexed-list/uni-indexed-list.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-indexed-list/components/uni-indexed-list/uni-indexed-list.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-indexed-list/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-indexed-list/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-link/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-link/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-link/components/uni-link/uni-link.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-link/components/uni-link/uni-link.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-link/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-link/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-link/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-link/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-notice-bar/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-notice-bar/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-notice-bar/components/uni-notice-bar/uni-notice-bar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-notice-bar/components/uni-notice-bar/uni-notice-bar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-notice-bar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-notice-bar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-number-box/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-number-box/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-number-box/components/uni-number-box/uni-number-box.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-number-box/components/uni-number-box/uni-number-box.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-number-box/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-number-box/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-number-box/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-number-box/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-pagination/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-pagination/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-pagination/components/uni-pagination/uni-pagination.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-pagination/components/uni-pagination/uni-pagination.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-pagination/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-pagination/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-pagination/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-pagination/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-row/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-row/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-row/components/uni-col/uni-col.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-row/components/uni-col/uni-col.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-row/components/uni-row/uni-row.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-row/components/uni-row/uni-row.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-row/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-row/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-search-bar/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-search-bar/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-search-bar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-search-bar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-search-bar/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-search-bar/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-segmented-control/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-segmented-control/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-segmented-control/components/uni-segmented-control/uni-segmented-control.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-segmented-control/components/uni-segmented-control/uni-segmented-control.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-segmented-control/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-segmented-control/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-steps/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-steps/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-steps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-steps/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-steps/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-steps/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-swiper-dot/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-swiper-dot/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-swiper-dot/components/uni-swiper-dot/uni-swiper-dot.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-swiper-dot/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-swiper-dot/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-table/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-table/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-table/components/uni-th/filter-dropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-table/components/uni-th/filter-dropdown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-table/components/uni-th/uni-th.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-table/components/uni-th/uni-th.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-table/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-table/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-tag/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-tag/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-tag/components/uni-tag/uni-tag.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-tag/components/uni-tag/uni-tag.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-tag/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-tag/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-tag/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-tag/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-title/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-title/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-title/components/uni-title/uni-title.vue" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-title/components/uni-title/uni-title.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-title/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-title/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-title/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-title/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-transition/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-transition/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-transition/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-transition/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uni_modules/uni-transition/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/uni_modules/uni-transition/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,15 +111,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="286OldkFcwEPoTRTt7S0URaqWor" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BaiduNetdiskDownload/微信小程序项目-资料/day02/day02/代码/代码/uni-shop-2" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="E:\WechatApp\uniapp-shop-1\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -34,10 +138,32 @@
       <option name="presentableId" value="Default" />
       <updated>1650533720471</updated>
       <workItem from="1650533721583" duration="39000" />
+      <workItem from="1650594914351" duration="1198000" />
+      <workItem from="1650597304815" duration="1038000" />
+      <workItem from="1650598805398" duration="2000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

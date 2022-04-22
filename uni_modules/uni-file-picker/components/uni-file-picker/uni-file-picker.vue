@@ -278,7 +278,7 @@
 						files.push(Object.assign({}, v))
 					}
 				})
-				return this.uploadFiles(files)
+				this.uploadFiles(files)
 			},
 			async setValue(newVal, oldVal) {
 				const newData =  async (v) => {
@@ -416,12 +416,11 @@
 			 */
 			uploadFiles(files) {
 				files = [].concat(files)
-				return uploadCloudFiles.call(this, files, 5, res => {
+				uploadCloudFiles.call(this, files, 5, res => {
 						this.setProgress(res, res.index, true)
 					})
 					.then(result => {
 						this.setSuccessAndError(result)
-						return result;
 					})
 					.catch(err => {
 						console.log(err)
