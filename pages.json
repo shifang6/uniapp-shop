@@ -40,18 +40,18 @@
             "path": "goods_lists/goods_lists",
             "style": {
                 "navigationBarTitleText": "",
+                "enablePullDownRefresh": true,
+                "backgroundColor": "#f8f8f8",
+                "onReachBottomDistance": 150
+            }
+        }, {
+            "path": "search/search",
+            "style": {
+                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
-        }    ,{
-                    "path" : "search/search",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
+
+        }]
     }],
     "tabBar": {
         "selectedColor": "#C00000",
