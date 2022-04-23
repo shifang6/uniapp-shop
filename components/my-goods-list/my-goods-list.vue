@@ -1,5 +1,5 @@
 <template>
-    <view class="goods_list_item">
+    <view class="goods_list_item" @click="handleSeeGoodsDetails(item)">
         <view class="goods_list_item_image"><image :src="item.goods_big_logo || defaultPic"></image></view>
         <view class="goods_list_item_context">
             <text class="goods_list_item_context_title">{{ item.goods_name }}</text>
@@ -22,6 +22,13 @@ export default {
         return {
             defaultPic: 'https://img3.doubanio.com/f/movie/8dd0c794499fe925ae2ae89ee30cd225750457b4/pics/movie/celebrity-default-medium.png'
         };
+    },
+    methods: {
+        handleSeeGoodsDetails({ goods_id }) {
+            uni.navigateTo({
+                url: '/subpkg/goods_details/goods_details?goods_id=' + goods_id
+            });
+        }
     }
 };
 </script>
