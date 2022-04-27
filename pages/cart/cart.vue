@@ -1,6 +1,7 @@
 <template>
-  <view
-    ><my-goods-list
+  <view>
+    <my-address />
+    <my-goods-list
       v-for="item in cart"
       :key="item.goods_id"
       :item="item"
@@ -28,11 +29,11 @@ export default {
   methods: {
     ...mapMutations("m_cate", ["CHANGE_GOODS_STATUS", "CHANGE_GOODS_NUMBOX"]),
     changeRadioStatus(obj) {
-    //   console.log(obj);
+      //   console.log(obj);
       this.CHANGE_GOODS_STATUS(obj);
     },
     changeNumBoxCount(obj) {
-    //   console.log(obj);
+      //   console.log(obj);
       this.CHANGE_GOODS_NUMBOX(obj);
     },
   },
