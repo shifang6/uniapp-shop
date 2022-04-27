@@ -1,5 +1,5 @@
 <template>
-  <view>
+  <view style="padding-bottom: 50px">
     <my-address />
     <my-goods-list
       v-for="item in cart"
@@ -9,7 +9,10 @@
       :ShowNumberBox="true"
       @changeRadioStatus="changeRadioStatus"
       @changeNumBoxCount="changeNumBoxCount"
-  /></view>
+    />
+    <!-- 结算区域 -->
+    <my-settle></my-settle>
+  </view>
 </template>
 
 <script>
@@ -27,14 +30,20 @@ export default {
     ...mapGetters("m_cate", ["shop_total"]),
   },
   methods: {
-    ...mapMutations("m_cate", ["CHANGE_GOODS_STATUS", "CHANGE_GOODS_NUMBOX"]),
+    ...mapMutations("m_cate", [
+      "CHANGE_GOODS_STATUS",
+      "CHANGE_GOODS_NUMBOX",
+      "SINGLE_CLICK_COUNTS",
+    ]),
     changeRadioStatus(obj) {
       //   console.log(obj);
       this.CHANGE_GOODS_STATUS(obj);
+      this.SINGLE_CLICK_COUNTS();
     },
     changeNumBoxCount(obj) {
       //   console.log(obj);
       this.CHANGE_GOODS_NUMBOX(obj);
+      this.SINGLE_CLICK_COUNTS();
     },
   },
 };
