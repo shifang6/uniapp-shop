@@ -25,13 +25,14 @@
         <view class="info_container_richText_introduceTitle">商品详情</view>
         <view class="info_container_richText"><rich-text :nodes="goods_info.goods_introduce"></rich-text></view>
         <view class="info_container_goodsNav">
-            <view class="goods-carts"><uni-goods-nav :options="options" :fill="true" :button-group="buttonGroup" @click="onClick" /></view>
+            <view class="goods-carts"><uni-goods-nav :options="options" :fill="true" :button-group="buttonGroup" @click="onClick" @buttonClick="buttonClick" /></view>
         </view>
     </view>
 </template>
 
 <script>
 import { GetGoodsDeatilsApi } from '@/api/goods_details.js';
+import { mapState, mapMutations, mapGetters } from 'vuex';
 export default {
     data() {
         return {
@@ -69,7 +70,27 @@ export default {
     onReady() {
         this.getInfo();
     },
+    watch: {
+        shop_total: {
+            handler(newValue) {
+                console.log(newValue);
+                this.options.forEach(item => {
+                    if (item.text == '购物车') {
+                        item.info = newValue;
+                    }
+                });
+            },
+            immediate: true
+        }
+    },
+    computed: {
+        // 调用 mapState 方法，把 m_cart 模块中的 cart 数组映射到当前页面中，作为计算属性来使用
+        // ...mapState('模块的名称', ['要映射的数据名称1', '要映射的数据名称2'])
+        ...mapState('m_cate', ['cart']),
+        ...mapGetters('m_cate', ['shop_total'])
+    },
     methods: {
+        ...mapMutations('m_cate', ['ADDSHOPCARD']),
         clickPreviewBigImage(i) {
             uni.previewImage({
                 current: i,
@@ -89,6 +110,17 @@ export default {
                 uni.switchTab({
                     url: '/pages/cart/cart'
                 });
+            }
+        },
+        buttonClick(e) {
+            console.log(e);
+            if (e.content.text == '加入购物车') {
+                const insertCart = {
+                    ...this.goods_info,
+                    goods_checked: false,
+                    goods_counts: 1
+                };
+                this.ADDSHOPCARD(insertCart);
             }
         }
     }

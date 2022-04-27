@@ -1,10 +1,14 @@
 <template>
-    <view class="goods_list_item" @click="handleSeeGoodsDetails(item)">
-        <view class="goods_list_item_image"><image :src="item.goods_big_logo || defaultPic"></image></view>
+    <view class="goods_list_item">
+        <radio v-if="ShowRadio" class="goods_list_item_radio" value="r1" :checked="item.goods_checked" color="#c00000" @click="changeRadioStatus(item)" />
+        <view class="goods_list_item_image" @click="handleSeeGoodsDetails(item)"><image :src="item.goods_big_logo || defaultPic"></image></view>
         <view class="goods_list_item_context">
-            <text class="goods_list_item_context_title">{{ item.goods_name }}</text>
-            <text class="goods_list_item_context_base">商品数量:{{ item.goods_number }},商品重量:{{ item.goods_weight }}(kg)</text>
-            <text class="goods_list_item_context_price">￥{{ item.goods_price }}</text>
+            <text class="goods_list_item_context_title" @click="handleSeeGoodsDetails(item)">{{ item.goods_name }}</text>
+            <text v-if="ShowNumberBox" class="goods_list_item_context_select">当前选择: X{{ item.goods_counts }}</text>
+            <view class="goods_list_item_context_bottom">
+                <text class="goods_list_item_context_price">￥{{ item.goods_price }}</text>
+                <uni-number-box v-if="ShowNumberBox" :min="1" :value="item.goods_counts" @change="changeNumBoxCount"></uni-number-box>
+            </view>
         </view>
     </view>
 </template>
@@ -16,6 +20,14 @@ export default {
         item: {
             type: Object,
             default: () => {}
+        },
+        ShowRadio: {
+            type: Boolean,
+            default: () => false
+        },
+        ShowNumberBox: {
+            type: Boolean,
+            default: () => false
         }
     },
     data() {
@@ -28,6 +40,17 @@ export default {
             uni.navigateTo({
                 url: '/subpkg/goods_details/goods_details?goods_id=' + goods_id
             });
+        },
+        changeRadioStatus({ goods_id, goods_checked }) {
+            //   console.log(goods_id, goods_checked);
+            this.$emit('changeRadioStatus', { goods_id, goods_checked });
+        },
+        changeNumBoxCount(e) {
+            // console.log(e);
+            this.$emit('changeNumBoxCount', {
+                goods_id: this.item.goods_id,
+                goods_counts: e
+            });
         }
     }
 };
@@ -39,6 +62,11 @@ export default {
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
+    padding: 10rpx 20rpx;
+    margin-bottom: 8rpx;
+    &_radio {
+        margin-right: 12rpx;
+    }
     &_image {
         margin-right: 8px;
         image {
@@ -51,6 +79,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100px;
     &_title {
         font-size: 14px;
         display: -webkit-box; //将对象作为弹性伸缩盒子模型显示。
@@ -65,6 +94,14 @@ export default {
     &_price {
         color: #c00000;
         font-size: 16px;
+    }
+    &_bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_select {
+        color: gray;
+        font-size: 12px;
     }
 }
 </style>

@@ -4,7 +4,7 @@
         <!-- 轮播图部分 -->
         <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
             <swiper-item v-for="item in swipersDate" :key="item.id">
-                <navigator class="swiper-item" :url="'/subpkg/goods_details/goods_details? goods_id=' + item.goods_id"><image :src="item.image_src"></image></navigator>
+                <navigator class="swiper-item" :url="'/subpkg/goods_details/goods_details?goods_id=' + item.goods_id"><image :src="item.image_src"></image></navigator>
             </swiper-item>
         </swiper>
         <!-- 顶部分类部分 -->
@@ -40,8 +40,9 @@
 
 <script>
 import { GetSwiperApi, GetTopCatelogApi, GetFloorDateApi } from '@/api/home.js';
-
+import CateMixins from '@/mixins/cate.js';
 export default {
+    mixins: [CateMixins],
     data() {
         return {
             swipersDate: [],

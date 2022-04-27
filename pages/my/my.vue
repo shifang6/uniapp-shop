@@ -5,7 +5,9 @@
 </template>
 
 <script>
-    export default {
+import CateMixins from '@/mixins/cate.js';
+export default {
+    mixins: [CateMixins],
         data() {
             return {
                 

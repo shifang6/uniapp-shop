@@ -1,5 +1,5 @@
 {
-    "name" : "uniapp-shop-1",
+    "name" : "家家购物",
     "appid" : "__UNI__EC90EB0",
     "description" : "",
     "versionName" : "1.0.0",
@@ -41,7 +41,9 @@
             },
             "ios" : {},
             /* ios打包配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "ad" : {}
+            }
         }
     },
     /* SDK配置 */
