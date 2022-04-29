@@ -3,7 +3,7 @@ var EnvChannel = {
     TEST: 1, //测试环境
     PRODUCTION: 2 //生产环境
 }
-let ENV_CONFIG = require('.env.dev.js');
+let ENV_CONFIG = require('./.env.dev.js');
 //设置环境
 const ENV_CHANNEL = EnvChannel.DEVELOPMENT;
 

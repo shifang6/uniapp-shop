@@ -1,13 +1,13 @@
 //封装axios请求
 import Vue from 'vue'
 import axios from 'axios'
-// import store from '@/store'
+import store from '../store/store'
 
-// console.log('token----------------------------->',store.state.token)
+console.log('token----------------------------->', store)
 
 // create an axios instance
 const service = axios.create({
-    baseURL: process.uniEnv.baseUrl,
+    baseURL: 'https://www.uinav.com',
     withCredentials: true, //允许跨域携带cookie
     // send cookies when cross-domain requests 注意：withCredentials和后端配置的cross跨域不可同时使用
     timeout: 6000, // request timeout
@@ -18,10 +18,10 @@ const service = axios.create({
 // request拦截器,在请求之前做一些处理
 service.interceptors.request.use(
     config => {
-        // if (store.state.token) {
-        //  // 给请求头添加user-token
-        //  config.headers["Authorization"] = 'Bearer ' + store.state.token;
-        // }
+        if (store.state.m_cate.token) {
+            // 给请求头添加user-token
+            config.headers["Authorization"] = uni.getStorageSync("token");
+        }
         // console.log('请求拦截成功')
         //针对媒体类型数据进行特殊处理
         if (config.method === 'formdata') {
@@ -44,7 +44,7 @@ service.interceptors.request.use(
 
 //配置成功后的拦截器
 service.interceptors.response.use(res => {
-    console.log('响应拦截器res---------------', res)
+    // console.log('响应拦截器res---------------', res)
     //res.data.status== 200
     if (res.data.meta.status == 200) {
         return res.data

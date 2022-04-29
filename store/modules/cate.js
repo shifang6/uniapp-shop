@@ -1,12 +1,12 @@
+import {
+    GetTokenAPi
+} from '@/api/login.js';
 export default {
     // 为当前模块开启命名空间
     namespaced: true,
 
     // 模块的 state 数据
     state: () => ({
-        // 购物车的数组，用来存储购物车中每个商品的信息对象
-        // 每个商品的信息对象，都包含如下 6 个属性：
-        // { goods_id, goods_name, goods_price, goods_count, goods_small_logo, goods_state }
         cart: uni.getStorageSync("cate") ?
             JSON.parse(uni.getStorageSync("cate")) : [],
         SelectPay: uni.getStorageSync("SelectPay") ?
@@ -14,10 +14,32 @@ export default {
                 selectFlag: false,
                 selectTotal: 0,
             },
+        // 用户数据
+        userInfo: JSON.parse(uni.getStorageSync("userInfo") || "{}"),
+        token: uni.getStorageSync("token")?JSON.parse(uni.getStorageSync("token")) || "":"",
+        switchBar: null
     }),
 
     // 模块的 mutations 方法
     mutations: {
+        // 设置重定向路径
+        SET_SWITCHBAR(state, redirectUrl) {
+            state.switchBar = redirectUrl;
+        },
+        // 存入用户详细信息数据
+        SAVE_STORAGE_USERINFO(state, userInfo) {
+            state.userInfo = userInfo;
+            this.commit("m_cate/SAVE_STORAGE_BY_SYNC");
+        },
+        // 存入用户登录token
+        SET_TOKEN(state, token) {
+            state.token = token;
+            uni.setStorageSync("token", JSON.stringify(state.token))
+        },
+        // 用户信息存入
+        SAVE_STORAGE_BY_SYNC(state) {
+            uni.setStorageSync("userInfo", JSON.stringify(state.userInfo));
+        },
         // 全选方法
         CHECKED_BY_ALL(state) {
             state.SelectPay.selectFlag = !state.SelectPay.selectFlag;
@@ -101,6 +123,34 @@ export default {
         SET_STORAGE_SHOP(state) {
             uni.setStorageSync("cate", JSON.stringify(state.cart));
         },
+    },
+    actions: {
+        GET_SET_TOKENS({
+            dispatch,
+            commit,
+            state
+        }) {
+            return new Promise(async(succ, err) => {
+                console.log(state.userInfo);
+                const {
+                    code,
+                    iv,
+                    rawData,
+                    signature,
+                    encryptedData
+                } = state.userInfo;
+                await GetTokenAPi({
+                    code,
+                    iv,
+                    rawData,
+                    signature,
+                    encryptedData
+                }).then(res => {
+                    console.log(res, '获取tokens');
+                    commit("SET_TOKEN", res.message.token)
+                })
+            })
+        }
     },
 
     // 模块的 getters 属性

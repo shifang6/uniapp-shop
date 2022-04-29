@@ -5,8 +5,8 @@
 			console.log('App Launch')
 		},
 		onShow: function() {
-			console.log(process.uniEnv.baseUrl)
-			console.log('App Show')
+			console.log(process.uniEnv.baseUrl,'baseUrl')
+			console.log('App Show',this.$store)
 		},
 		onHide: function() {
 			console.log('App Hide')
